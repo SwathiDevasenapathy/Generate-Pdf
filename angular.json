@@ -27,7 +27,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/pdfmake/build/vfs_fonts/",
+                "output": "/assets/vfs_fonts/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -90,7 +95,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/pdfmake/build/vfs_fonts/",
+                "output": "/assets/vfs_fonts/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -100,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "38bb493b-1c0b-4cd7-bbbf-a3e16828ba99"
   }
 }
